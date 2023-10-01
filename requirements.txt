@@ -1,0 +1,9 @@
+h5py
+nevergrad
+numpy
+scipy
+tensorboard
+torch
+torchvision
+tqdm
+visdom
