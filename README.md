@@ -3,22 +3,21 @@ Implementation of Memory Efficient Video GAN.
 
 # Prepare environment
 
-### Install requirements
+Install requirements.
 ```
 pip install requirements.txt
 ```
-### Place ProGAN repo within MeVGAN repo
+Place ProGAN repo within MeVGAN repo.
 ```
 git clone https://github.com/facebookresearch/pytorch_GAN_zoo progan
 ```
-### Apply patch to ProGAN repo
+Apply patch to ProGAN repo.
+This will stop visdom session from running in the background, set batch size to 8 for ProGAN training, and add functionality to load ProGAN from checkpoint.
 ```
 cd progan
 git apply ../progan.patch
 ```
-This will stop visdom session from running in the background, set batch size to 8 for ProGAN training, and add functionality to load ProGAN from checkpoint.
-### Prepare custom dataset
-Place all your frames in one directory, following the naming convention:
+Prepare custom dataset. Place all your frames in one directory, following the naming convention:
 ```
 <video_name>_<frame_number>.jpg
 ```
