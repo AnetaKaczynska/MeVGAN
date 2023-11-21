@@ -12,8 +12,6 @@ class RealVideos(Dataset):
         self.img_dir = path
         self.ch, self.duration, self.h, self.w = 3, 8, 1024, 1024
         self.video_names = self._load_videos()
-        print(len(self.video_names))
-        print(self.video_names[:10])
 
     def _load_videos(self):
         images = os.listdir(self.img_dir)

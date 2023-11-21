@@ -1,5 +1,4 @@
 import sys
-sys.path.insert(0, './progan')
 
 from datetime import datetime
 import argparse
@@ -158,7 +157,7 @@ if __name__ == "__main__":
     # --------------- train ---------------
 
     start_epoch = args.checkpoint_epoch + 1 if args.checkpoint_epoch else 0
-    epochs = 50
+    epochs = 100
     batch_size = 1
 
     fsg.train()

@@ -17,6 +17,10 @@ This will stop visdom session from running in the background, set batch size to 
 cd progan
 git apply ../progan.patch
 ```
+Copy model files from progan/models to MeVGAN/models to recreate original directory structure used to save ProGAN checkpoint. This is necessary to load model weigths.
+```
+cp -r models/* ../models
+```
 Prepare custom dataset. Place all your frames in one directory, following the naming convention:
 ```
 <video_name>_<frame_number>.jpg
