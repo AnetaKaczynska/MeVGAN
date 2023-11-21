@@ -1,6 +1,12 @@
 # MeVGAN
 Implementation of Memory Efficient Video GAN.
 
+![Image 1](images/1.png?raw=true)
+![Image 2](images/2.png?raw=true)
+![Image 3](images/3.png?raw=true)
+![Image 4](images/4.png?raw=true)
+![Image 5](images/5.png?raw=true)
+
 # Prepare environment
 
 Install requirements.
@@ -25,6 +31,13 @@ Prepare custom dataset. Place all your frames in one directory, following the na
 ```
 <video_name>_<frame_number>.jpg
 ```
+
+# Datasets
+
+We have used publicly available UCF-101 dataset, which can be found here: https://www.crcv.ucf.edu/data/UCF101.php
+
+Colonoscopy data cannot be publicly shared, but we allow datasets to be available upon request.
+For further informaction please contact Tomasz Urbańczyk at tomasz.urbanczyk@dmt.com.pl
 
 # Train
 
